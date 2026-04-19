@@ -1,5 +1,10 @@
 # 🌿 ArogyaAI: Hybrid Intelligence for Ayurvedic Clinical Support
 
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
 ArogyaAI is a modern, cloud-connected Clinical Decision Support System (CDSS) designed to bridge the gap between traditional Ayurvedic medicine and modern Artificial Intelligence. 
 
 By utilizing a **Dual-Engine AI Architecture** (Deterministic Machine Learning + Generative AI) and strict **Role-Based Access Control (RBAC)**, ArogyaAI provides a secure, end-to-end ecosystem for both patients and medical practitioners.
@@ -10,7 +15,7 @@ By utilizing a **Dual-Engine AI Architecture** (Deterministic Machine Learning +
 Traditional Ayurvedic diagnostics rely heavily on practitioner intuition, while modern medical AI models act as "black boxes" that ignore holistic factors like Doshas (Prakriti) and seasonality. Furthermore, exposing raw, low-confidence ML predictions directly to patients poses a severe ethical and psychological risk.
 
 **ArogyaAI solves this by:**
-1. Combining mathematical Random Forest predictions with Gemini-powered contextual reasoning.
+1. Combining mathematical Random Forest predictions with Generative LLM contextual reasoning.
 2. Utilizing Explainable AI (XAI) so doctors can see *why* the AI made its decision.
 3. Implementing strict Clinical Safety Guardrails that mask low-confidence predictions to prevent patient panic.
 
@@ -34,6 +39,16 @@ Traditional Ayurvedic diagnostics rely heavily on practitioner intuition, while 
 
 ---
 
+## 🚀 Future Roadmap (What's Next?)
+ArogyaAI is built to scale. Future iterations of this platform will focus on continuous learning and broader accessibility:
+
+1. **Continuous AI Learning (Feedback Loop):** Allow doctors to "Accept" or "Correct" the AI's diagnosis. Corrected inputs will be saved to a verified database collection to continuously retrain and fine-tune the Random Forest model for specific clinic demographics.
+2. **Wearable IoT Integration:** Connect with smartwatches (Apple Watch / Fitbit APIs) to automatically pull real-time vitals (heart rate, sleep data) directly into the Patient's Health Diary.
+3. **Multilingual Support for Rural Access:** Integrate translation APIs so patients in rural India can log symptoms in regional languages (Hindi, Marathi, Tamil) while the doctor reads the standardized English output.
+4. **Telemedicine & Appointment Booking:** Add a scheduling system where doctors can trigger video calls directly from a patient's high-risk health diary entry.
+
+---
+
 ## 🛠️ System Architecture & Tech Stack
 
 **Frontend:**
@@ -53,7 +68,7 @@ Traditional Ayurvedic diagnostics rely heavily on practitioner intuition, while 
 
 ---
 
-## 🚀 How to Run the Project Locally
+## ⚙️ How to Run the Project Locally
 
 ### 1. Clone the Repository
 ```bash
