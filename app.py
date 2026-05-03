@@ -21,7 +21,7 @@ tfidf = joblib.load('tfidf_vectorizer.pkl')
 label_encoder = joblib.load('label_encoder.pkl')
 
 # Set up Gemini API 
-genai.configure(api_key="AIzaSyCqsTq6NMw_uy6l7uzjwIyYfLPNfbyiugU")
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 llm_model = genai.GenerativeModel('gemini-2.5-flash')
 
 @app.route('/', methods=['GET'])
