@@ -1,3 +1,10 @@
+import os
+from dotenv import load_dotenv
+
+# Load the secret variables from the .env file
+load_dotenv()
+
+# ... your other imports ...
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import joblib
@@ -14,7 +21,7 @@ tfidf = joblib.load('tfidf_vectorizer.pkl')
 label_encoder = joblib.load('label_encoder.pkl')
 
 # Set up Gemini API 
-genai.configure(api_key="AIzaSyBVV7yg0voSyc3Xl6Itilgjz-QM-8kBt1Y")
+genai.configure(api_key="AIzaSyCqsTq6NMw_uy6l7uzjwIyYfLPNfbyiugU")
 llm_model = genai.GenerativeModel('gemini-2.5-flash')
 
 @app.route('/', methods=['GET'])
